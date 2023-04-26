@@ -1,13 +1,65 @@
-body {
+* {
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+.container {
+  width: 100%;
+  max-width: 1320px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 1281px) {
+  .container{
+    max-width: 1200px;
+  }
+}
+@media screen and (max-width: 885px) {
+  .container{
+    max-width: 850px;
+  }
+}
+@media screen and (max-width: 835px) {
+  .container{
+    max-width: 800px;
+  }
+}
+@media screen and (max-width: 801px) {
+  .container{
+    max-width: 750px;
+  }
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@media screen and (max-width: 430px) {
+  .container{
+    max-width: 410px;
+  }
+}
+@media screen and (max-width: 415px) {
+  .container{
+    max-width: 400px;
+  }
+}
+@media screen and (max-width: 391px) {
+  .container{
+    max-width: 370px;
+  }
+}
+@media screen and (max-width: 376px) {
+  .container{
+    max-width: 360px;
+  }
+}
+@media screen and (max-width: 321px) {
+  .container{
+    max-width: 312px;
+  }
+}
+body {
+  font-family: "Inter";
 }

@@ -1,0 +1,20 @@
+.react-tabs__tab--selected {
+  list-style: disc;
+  transition: 1s;
+  animation-name: aaa;
+  animation-iteration-count: 1;
+  animation-duration: 1s;
+  color: #0053ff;
+  border: none;
+  outline: none;
+}
+@keyframes aaa {
+  0% {
+    margin-left: 10px;
+    color: #0053ff;
+  }
+  100% {
+    margin-left: 0;
+    color: #0053ff;
+  }
+}
