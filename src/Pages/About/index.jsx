@@ -32,6 +32,10 @@ const Tablist = styled(TabList)`
     height: 45px;
     gap: 50px;
   }
+  @media screen and (max-width: 430px) {
+    height: auto;
+    flex-wrap: wrap;
+  }
 `;
 const Tabb = styled(Tab)`
   font-family: "Inter";
@@ -55,6 +59,10 @@ const Bottom = styled.div`
   background-color: #fff;
   display: flex;
   flex-direction: row-reverse;
+  @media screen and (max-width: 430px) {
+    flex-direction: column;
+    gap: 10px;
+  }
 `;
 export default function About() {
   return (
@@ -64,9 +72,8 @@ export default function About() {
           <Box>
             <Tabss>
               <Tablist>
-                <Tabb>Услуги</Tabb>
-                <Tabb>Лекарство</Tabb>
                 <Tabb>О нас</Tabb>
+                <Tabb>Something</Tabb>
               </Tablist>
 
               <TabPanel>

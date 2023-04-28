@@ -1,15 +1,19 @@
 import React from "react";
 import styled from "styled-components";
-import {  Logo2 } from "../../assets/imgs";
+import { Logo2 } from "../../assets/imgs";
 import { ListInfor } from "../../constant/list";
 import { Link } from "react-router-dom";
 const Box = styled.div`
+  background-color: rgb(238, 238, 238);
+`;
+const Footerr = styled.footer`
+  background-color: rgb(238, 238, 238);
 `;
 const Top = styled.div`
   display: flex;
   flex-direction: column;
   gap: 34px;
-  padding-bottom: 25px;
+  padding: 25px 0px 25px 0px;
 `;
 const LogoTip = styled.div`
   display: flex;
@@ -31,11 +35,20 @@ const Nav = styled.div`
   align-items: center;
   justify-content: space-between;
   width: 100%;
+  @media screen and (max-width: 430px) {
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+  }
 `;
 const List = styled.ul`
   display: flex;
   align-items: center;
   gap: 30px;
+  @media screen and (max-width: 430px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 `;
 const Item = styled.li`
   font-family: "Inter";
@@ -44,6 +57,9 @@ const Item = styled.li`
   font-size: 18px;
   line-height: 17px;
   color: #000000;
+  @media screen and (max-width: 801px) {
+    font-size: 15px;
+  }
 `;
 const Tel = styled.p`
   font-family: "Inter";
@@ -73,7 +89,7 @@ const Box2 = styled.div`
 `;
 export default function Footer() {
   return (
-    <>
+    <Footerr>
       <div className="container">
         <Box>
           <Top>
@@ -117,6 +133,6 @@ export default function Footer() {
           </Box2>
         </div>
       </Bottom>
-    </>
+    </Footerr>
   );
 }

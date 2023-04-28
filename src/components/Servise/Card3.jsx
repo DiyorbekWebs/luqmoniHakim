@@ -16,6 +16,11 @@ const Card = styled.div`
     padding: 70px 75px 33px 45px;
     gap: 50px;
   }
+  @media screen and (max-width: 430px) {
+    width: 96%;
+    padding: 90px 75px 150px 45px;
+
+  }
 `;
 const Top = styled.div`
   display: flex;

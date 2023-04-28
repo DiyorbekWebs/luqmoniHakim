@@ -15,6 +15,13 @@ import Medicine from "./medicine.jpg";
 import Heart from "./heart.svg";
 import Share from "./share.svg";
 import ModalICon from "./modal.svg";
+import Medicin from "./medicin.jpg";
+import Person1 from "./p1 (1).png";
+import Person2 from "./p1 (2).png";
+import Person3 from "./p1 (3).png";
+import Person4 from "./p1 (4).png";
+import Person5 from "./p1 (5).png";
+import Persons from "./persons.png";
 
 export {
   Logo,
@@ -34,4 +41,11 @@ export {
   Heart,
   Share,
   ModalICon,
+  Medicin,
+  Person1,
+  Person2,
+  Person3,
+  Person4,
+  Person5,
+  Persons
 };

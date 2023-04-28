@@ -24,6 +24,11 @@ const Top = styled.div`
     flex-wrap: wrap;
     gap: 20px;
   }
+  @media screen and (max-width: 430px) {
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 const Div = styled.div`
   display: flex;
@@ -41,6 +46,10 @@ const Div = styled.div`
   @media screen and (max-width: 801px) {
     padding: 0px 0px 0px 10px;
   }
+  @media screen and (max-width: 430px) {
+    padding: 0px;
+    gap: 20px;
+  }
 `;
 const Tex1 = styled.h1`
   width: 387px;
@@ -52,10 +61,13 @@ const Tex1 = styled.h1`
   color: #000000;
   @media screen and (max-width: 801px) {
     font-size: 38px;
-  line-height: 40px;
-
-
-}
+    line-height: 40px;
+  }
+  @media screen and (max-width: 430px) {
+    width: 310px;
+    font-size: 32px;
+    line-height: 35px;
+  }
 `;
 const Paragrf = styled.p`
   width: 370px;
@@ -66,7 +78,9 @@ const Paragrf = styled.p`
   line-height: 140%;
   color: #000000;
   opacity: 0.6;
- 
+  @media screen and (max-width: 430px) {
+    width: 300px;
+  }
 `;
 const Img1 = styled.img`
   width: 354px;
@@ -82,6 +96,10 @@ const Img1 = styled.img`
     width: 330px;
     height: 325px;
   }
+  @media screen and (max-width: 430px) {
+    width: 100%;
+    height: 300px;
+  }
 `;
 const Img2 = styled.img`
   width: 480px;
@@ -96,9 +114,18 @@ const Img2 = styled.img`
     height: 400px;
     padding-left: 10px;
   }
+  @media screen and (max-width: 430px) {
+    width: 100%;
+    height: 300px;
+  }
 `;
 const Bottom = styled.div`
   display: flex;
+  @media screen and (max-width: 430px) {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
 `;
 export default function Hero() {
   return (

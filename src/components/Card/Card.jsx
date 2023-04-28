@@ -31,6 +31,11 @@ const Cards = styled.div`
     gap: 30px;
     flex-wrap: wrap;
   }
+  @media screen and (max-width: 430px) {
+   flex-direction: column;
+   align-items: center;
+  }
+  
 `;
 const Diiv = styled.ul`
   padding: 66px 88px 70px 70px;
@@ -52,6 +57,9 @@ const Diiv = styled.ul`
   }
   @media screen and (max-width: 885px) {
     padding: 76px 98px 80px 80px;
+  }
+  @media screen and (max-width: 430px) {
+    width: 100%;
   }
 `;
 const Img = styled.img`

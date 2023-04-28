@@ -27,6 +27,10 @@ const Card = styled.div`
     padding: 50px 40px 30px 40px;
     gap: 10px;
   }
+  @media screen and (max-width: 430px) {
+    width: 96%;
+    padding: 50px 0px;
+  }
 `;
 const Title = styled.div`
   font-family: "Inter";

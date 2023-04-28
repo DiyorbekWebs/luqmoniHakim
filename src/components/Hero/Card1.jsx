@@ -14,6 +14,9 @@ const Card = styled.div`
     padding: 64px 58px 69px 37px;
     gap: 81px;
   }
+  @media screen and (max-width: 430px) {
+   width: 100%;
+  }
 `;
 const Text = styled.div`
   width: 289px;

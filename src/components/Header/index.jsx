@@ -68,11 +68,15 @@ const Lang = styled.div`
   display: flex;
   gap: 6px;
   align-items: center;
+  @media screen and (max-width: 430px) {
+    display: none;
+}
 `;
 const List2 = styled.ul`
   display: flex;
   align-items: center;
   gap: 18px;
+ 
 `;
 const Item2 = styled.ul`
   font-family: "Inter";
@@ -94,11 +98,18 @@ const TelNomer = styled(Link)`
   font-size: 14px;
   line-height: 16px;
   color: #ffffff;
+  @media screen and (max-width: 430px) {
+    display: none;
+  }
 `;
 const ModalBtn = styled.div`
-  padding: 22px 32px;
-  background: #121212;
-  border-radius: 32px;
+  display: none;
+  @media screen and (max-width: 885px) {
+    display: block;
+    padding: 22px 32px;
+    background: #121212;
+    border-radius: 32px;
+  }
 `;
 export default function Header() {
   const [langg, setLangg] = React.useState(1);
@@ -114,7 +125,7 @@ export default function Header() {
             </LogoTip>
             <List>
               {ListInfor?.map((e) => (
-                <Link key={e.id}>
+                <Link key={e.id} to={e.path}>
                   <Item>{e.title}</Item>
                 </Link>
               ))}

@@ -18,7 +18,6 @@ const Top = styled.div`
   @media screen and (max-width: 835px) {
     padding: 40px 40px 30px 25px;
   }
-  
 `;
 const Title = styled.h1`
   font-family: "Inter";
@@ -36,10 +35,22 @@ const Paragrf = styled.p`
   font-size: 24px;
   line-height: 35px;
   color: #000000;
+  @media screen and (max-width: 801px) {
+    width: 650px;
+  }
+  @media screen and (max-width: 430px) {
+    width: 100%;
+  }
 `;
 const Img = styled.img`
   width: 714px;
   height: 429px;
+  @media screen and (max-width: 801px) {
+    width: 660px;
+  }
+  @media screen and (max-width: 430px) {
+    width: 100%;
+  }
 `;
 const Date = styled.div`
   display: flex;

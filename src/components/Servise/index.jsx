@@ -38,6 +38,12 @@ const Cards = styled.div`
     width: 750px;
     gap: 10px;
   }
+  @media screen and (max-width: 430px) {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    align-items: center;
+  }
 `;
 const Title = styled.div`
   font-family: "Inter";

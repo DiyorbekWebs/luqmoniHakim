@@ -2,22 +2,22 @@
   {
     id: 1,
     title: "Услуги",
-    path: "/#",
+    path: "/uslugi",
   },
   {
     id: 2,
     title: "Лекарство",
-    path: "/#",
+    path: "/lek",
   },
   {
     id: 3,
     title: "О нас",
-    path: "/#",
+    path: "/ab",
   },
   {
     id: 4,
     title: "Контакты",
-    path: "/#",
+    path: "/contact",
   },
   {
     id: 5,

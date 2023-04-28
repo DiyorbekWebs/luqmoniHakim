@@ -26,12 +26,21 @@ const Card = styled.div`
     padding: 0px 40px 0px 40px;
     gap: 10px;
   }
-  
+  @media screen and (max-width: 430px) {
+    width: 96%;
+    align-items: center;
+    flex-direction: column-reverse;
+    padding: 30px 0px;
+  }
 `;
 const Right = styled.div`
   display: flex;
   flex-direction: column;
   gap: 92px;
+  @media screen and (max-width: 430px) {
+    align-items: center;
+    gap: 30px;
+  }
 `;
 const Title = styled.div`
   font-family: "Inter";
@@ -57,8 +66,12 @@ const Btn = styled.div`
   cursor: pointer;
   @media screen and (max-width: 835px) {
     padding: 10px 20px;
-
   }
+  @media screen and (max-width: 430px) {
+    padding: 10px 50px;
+  }
+  
+ 
 `;
 const Text = styled.p`
   width: 182px;
@@ -70,12 +83,20 @@ const Text = styled.p`
   @media screen and (max-width: 835px) {
     width: 162px;
   }
+  @media screen and (max-width: 430px) {
+    width: auto;
+   
+}
 `;
 const Botm = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 19px;
+  @media screen and (max-width: 430px) {
+    align-items: center;
+    gap: 15px;
+  }
 `;
 const Paragrf = styled.div`
   font-family: "Inter";
@@ -89,8 +110,16 @@ const Paragrf = styled.div`
   @media screen and (max-width: 801px) {
     width: 250px;
   }
+  @media screen and (max-width: 430px) {
+    text-align: center;
+  }
 `;
-const Img = styled.img``;
+const Img = styled.img`
+  @media screen and (max-width: 430px) {
+    width: 150px;
+    height: 220px;
+  }
+`;
 export default function Card1() {
   return (
     <Card>
