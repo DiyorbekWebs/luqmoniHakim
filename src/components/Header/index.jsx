@@ -70,13 +70,12 @@ const Lang = styled.div`
   align-items: center;
   @media screen and (max-width: 430px) {
     display: none;
-}
+  }
 `;
 const List2 = styled.ul`
   display: flex;
   align-items: center;
   gap: 18px;
- 
 `;
 const Item2 = styled.ul`
   font-family: "Inter";
@@ -119,10 +118,12 @@ export default function Header() {
       <div className="container">
         <Nav>
           <Left>
-            <LogoTip>
-              <img src={Logo} alt="" />
-              <LogoText>Luqmoni Hakim</LogoText>
-            </LogoTip>
+            <Link to={'/'}>
+              <LogoTip>
+                <img src={Logo} alt="" />
+                <LogoText>Luqmoni Hakim</LogoText>
+              </LogoTip>
+            </Link>
             <List>
               {ListInfor?.map((e) => (
                 <Link key={e.id} to={e.path}>

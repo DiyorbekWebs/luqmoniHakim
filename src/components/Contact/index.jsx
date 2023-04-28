@@ -6,9 +6,11 @@ const Content = styled.div`
   padding-bottom: 98px;
   background-color: #eeeeee;
 `;
+const Diiv = styled.div`
+padding: 10px;
+`;
 const Box = styled.div`
-  padding: 52px 0px 108px 60px;
-  width: 100%;
+  padding: 52px 0px 100px 60px;
   background-color: #fff;
   border-radius: 20px;
   display: flex;
@@ -88,49 +90,54 @@ export default function Contact() {
   return (
     <Content>
       <div className="container">
-        <Box>
-          <Title>Наше контакты</Title>
-          <Div>
-            <Paragrf>
-              ООО “Luqmoni Hakim” 2020. Reference site about Lorem Ipsum, giving
-              information on its origins, as well as a random Lipsum generator.
-            </Paragrf>
-            <Bottom>
-              <Left>
-                <List>
-                  <Span>Телефон</Span>
-                  <Link>
-                    <Item>+998 90 000-00-00</Item>
-                  </Link>
-                </List>
-                <List>
-                  <Span>Соц-сет</Span>
-                  <Div2>
+        <Diiv>
+          <Box>
+            <Title>Наше контакты</Title>
+            <Div>
+              <Paragrf>
+                ООО “Luqmoni Hakim” 2020. Reference site about Lorem Ipsum,
+                giving information on its origins, as well as a random Lipsum
+                generator.
+              </Paragrf>
+              <Bottom>
+                <Left>
+                  <List>
+                    <Span>Телефон</Span>
                     <Link>
-                      <Item>Instagram</Item>
+                      <Item>+998 90 000-00-00</Item>
                     </Link>
-                    <Link>
-                      <Item>Facebook</Item>
-                    </Link>
-                    <Link>
-                      <Item>Telegram</Item>
-                    </Link>
-                  </Div2>
-                </List>
-              </Left>
-              <Right>
-                <List>
-                  <Span>Соц-сет</Span>
-                  <Item2>info@gmail.com</Item2>
-                </List>
-                <List>
-                  <Span>Адресс:</Span>
-                  <Item3>Toshkent shahar, Mirzo Ulug’bek tumani 165 A uy</Item3>
-                </List>
-              </Right>
-            </Bottom>
-          </Div>
-        </Box>
+                  </List>
+                  <List>
+                    <Span>Соц-сет</Span>
+                    <Div2>
+                      <Link>
+                        <Item>Instagram</Item>
+                      </Link>
+                      <Link>
+                        <Item>Facebook</Item>
+                      </Link>
+                      <Link>
+                        <Item>Telegram</Item>
+                      </Link>
+                    </Div2>
+                  </List>
+                </Left>
+                <Right>
+                  <List>
+                    <Span>Соц-сет</Span>
+                    <Item2>info@gmail.com</Item2>
+                  </List>
+                  <List>
+                    <Span>Адресс:</Span>
+                    <Item3>
+                      Toshkent shahar, Mirzo Ulug’bek tumani 165 A uy
+                    </Item3>
+                  </List>
+                </Right>
+              </Bottom>
+            </Div>
+          </Box>
+        </Diiv>
       </div>
     </Content>
   );

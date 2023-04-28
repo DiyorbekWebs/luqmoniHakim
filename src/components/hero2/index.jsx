@@ -13,6 +13,7 @@ import { Link } from "react-router-dom";
 const Hero = styled.div`
   padding: 0px 0px 60px 0px;
   background: #eeeeee;
+  overflow-x: hidden;
 `;
 const Box = styled.div`
   display: flex;
@@ -147,7 +148,6 @@ const Img2 = styled.img`
   display: none;
   @media screen and (max-width: 885px) {
     display: block;
-    
   }
 `;
 export default function Hero2() {
